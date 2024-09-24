@@ -5,7 +5,8 @@
   "author": "Jonatas Franca",
   "scripts": {
     "cy:run": "cypress run",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "allure:report":"npx allure serve allure-results"
   },
   "dependencies": {
     "cypress": "^13.14.2",
@@ -16,6 +17,8 @@
     "step_definitions": "cypress/e2e/steps"
   },
   "devDependencies": {
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.1",
     "cucumber-html-reporter": "^7.1.1",
     "cypress-cucumber-preprocessor": "^4.3.1"
   }

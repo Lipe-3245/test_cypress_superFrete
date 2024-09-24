@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import { url } from 'inspector';
 import './commands'
+import "allure-cypress";
 
 // Ignorar exceções não tratadas
 Cypress.on('uncaught:exception', (err, runnable) => {
