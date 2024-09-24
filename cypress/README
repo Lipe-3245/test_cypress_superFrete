@@ -77,9 +77,3 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 Esse projeto foi desenvolvido com o objetivo de fornecer uma base sólida para a automação de testes com Cypress, com as melhores práticas para garantir a consistência e previsibilidade dos testes. Sinta-se à vontade para adaptar o projeto às suas necessidades.
 
 
-Contribuindo
-Faça um fork do projeto.
-Crie uma nova branch (git checkout -b feature/nova-feature).
-Commit suas mudanças (git commit -am 'Adiciona nova feature').
-Envie para o branch principal (git push origin feature/nova-feature).
-Crie um novo Pull Request. 
