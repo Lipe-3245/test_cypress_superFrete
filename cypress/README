@@ -21,7 +21,7 @@ npm install
 
 Estrutura do Projeto
 cypress/fixtures/: Contém dados de exemplo para uso em seus testes.
-cypress/integration/: Aqui você colocará seus arquivos de teste.
+cypress/e2e/: Aqui você colocará seus arquivos de teste.
 cypress/plugins/: Plugins de Cypress podem ser configurados neste diretório.
 cypress/support/: Arquivos de suporte para os testes, como comandos personalizados e configurações globais.
 
@@ -47,13 +47,13 @@ Para executar os testes automatizados, você pode usar um dos comandos a seguir:
 
 Interface Gráfica (Test Runner)
 Para abrir a interface gráfica do Cypress e ver os testes rodando:
-npx cypress open
+npm run cy:open
 
 sso abrirá a janela do Cypress, onde você pode clicar nos testes que deseja rodar.
 
 Execução em Linha de Comando (Headless)
 Para rodar os testes sem abrir a interface gráfica, use:
-npx cypress run
+npm run cy:run
 
 Isso executará os testes em modo headless (sem interface) e exibirá os resultados no terminal.
 

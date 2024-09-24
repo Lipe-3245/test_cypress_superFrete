@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "description": "Testes de cálculo de frete com Cypress e Cucumber",
   "author": "Jonatas Franca",
-
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open"
-   
-    
-      
-    
-    
   },
   "dependencies": {
     "cypress": "^13.14.2",

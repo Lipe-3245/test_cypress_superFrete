@@ -34,8 +34,16 @@ class CalculoElements {
     return '[data-cy="calculator-submit"]';
   };
 
-  mensagemErro = () => {
-    return 'p[id="packageDepth-helper-text"]';
+  mensagemDeErro = () => {
+    return '#packageDepth-helper-text';
+  }
+
+  buttonLimpar = () => {
+    return '.css-tuxzvu > :nth-child(3) > .MuiButtonBase-root';
+  }
+
+  buttonSalvar = () => {
+    return '.css-tuxzvu > :nth-child(2) > .MuiButtonBase-root';
   }
 }
 export default CalculoElements;

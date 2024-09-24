@@ -1,6 +1,4 @@
 /// <reference types="cypress" />
-
-import { error } from "console";
 import CalculoElements from "../elements/calculoElements";
 const calculoElements = new CalculoElements();
 const url = Cypress.config("baseUrl");
@@ -43,11 +41,25 @@ class CalculoPage {
 
   
   
-  messagemDeErroComprimento(){
+  messagemDeErroComprimento(messageDeErro){
     cy.get(calculoElements.btnCalcularFrete()).click();
     cy.wait(3000)
-    cy.get('.error-message').should('be.visible').and('contain', error);
+    cy.get('#packageDepth-helper-text').should('have.text', messageDeErro);
   }
+
+  messageDeErroLargura(messageDeErro){
+    cy.get(calculoElements.btnCalcularFrete()).click();
+    cy.wait(3000)
+    cy.get('#packageWidth-helper-text').should('have.text', messageDeErro);
+  }
+
+  messageDeErroAltura(messageDeErro){
+    cy.get(calculoElements.btnCalcularFrete()).click();
+    cy.wait(3000)
+    cy.get('#packageHeight-helper-text').should('have.text', messageDeErro);
+  }
+
+  
 
 
 }

@@ -14,13 +14,22 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import { url } from 'inspector';
 import './commands'
 
 // Ignorar exceções não tratadas
 Cypress.on('uncaught:exception', (err, runnable) => {
+  // Imprimir o erro no console
+  console.error(err);
+  
     // Retornar false para impedir que o Cypress falhe o teste
     // em caso de exceção não tratada
-    return false;
+    //return false;
+
+    // Ou retornar true para permitir que o Cypress falhe o teste
+    // em caso de exceção não tratada
+     return false;
+
   });
 
   // Executa antes de cada teste
@@ -29,11 +38,15 @@ beforeEach(() => {
     cy.clearCookies();
   
     // Limpar armazenamento local
-    cy.clearLocalStorage();
+   // cy.clearLocalStorage();
   
     // Definir a resolução da tela para 1366x768
     cy.viewport(1366, 768);
   });
+
+ 
+  
+  
 
 
   
